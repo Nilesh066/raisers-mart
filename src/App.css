@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  display: grid;
+  grid-template-columns: auto;
+  grid-column: 1, -1;
+  background-color: lightgray;
+  min-height: 60px;
+  box-shadow: 0px 0px 10px 0px;
+}
+.header-items {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.logo {
+  font-size: large;
+}
+.logo:hover {
+  cursor: pointer;
+}
+
+.search {
+  border: 0px;
+  height: 30px;
+  width: 20%;
+  padding-left: 10px;
+}
+
+.search::placeholder {
+  color: black;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 30px;
+  height: 200px;
+  width: 150px;
+  background-color: lightblue;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 20px 0px;
+}
+.seencard {
+  margin: 30px;
+  height: 200px;
+  width: 150px;
+  background-color: lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+}
+.seencard > span {
+  font-size: 80px;
+  background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hideCard {
+  display: none;
+}
+
+.card > span {
+  font-size: 80px;
+  background-color: white;
+}
+.card-items {
+  font-size: 15px;
+  font-weight: bold;
+  background: rgb(86, 86, 202);
+  color: #fff;
+  padding: 8px;
+  position: absolute;
+  top: -15px;
+  left: 130px;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 200px;
+}
+
+.lists-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.lists-container > span {
+  font-size: 40px;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 5px;
 }
