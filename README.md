@@ -14,6 +14,13 @@
 #### 2.) No external library is used for development of this app.
 #### 3.) Context is used in this app to pass data among components.
 
+### Application Functionality:
+#### 1.) There are 2 pages in this app (album page and photo page).
+#### 2.) Dashboard contains albums in tiles.
+#### 3.) When an album is clicked it takes the user to list of photos inside it.
+#### 4.) A filter on the right hand top corner is used to filter the photos based on the title.
+#### 5.) Search functionality works on both albums and photos.
+
 
 
 
